@@ -1,0 +1,97 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .idg-app{
+	 display: grid;
+	 grid-template-columns: 70% 30%;
+ }
+
+ #idg-root-preview{
+	 min-height: 500px;
+	 max-height: 800px;
+ }
+
+ #idg-root-options{
+	 position: relative;
+	 max-height: 500px;
+	 overflow: scroll;
+ }
+
+
+ .idg-opt-head{
+	 display: flex;
+	 margin-left: 10px;
+	 padding: 10px;
+	border-radius: 5px 0px 0px 5px;
+	 background-color: #ebeaea;
+	 box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+ }
+
+ .idg-opt-head-title{
+	 display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: auto;
+ }
+
+ .idg-opt-list{
+	 grid-template: "panel";
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: inherit;
+	 padding: 8px;
+ }
+
+ .idg-opt-option{
+	 display: flex;
+	 height: auto;
+	 justify-content: center;
+ }
+ .option-thumb{
+	 box-shadow: 0 0 8px #a19f9f;
+	 cursor: pointer;
+	 margin: 8px;
+	 border-radius: 10px;
+ }
+ .idg-opt-head-thumb {
+	height: 30px;
+	width: 30px
+ }
+
+ .idg-opt-toggle{
+	grid-template: "toggle";
+}
+
+.opt-title {
+	display: flex;
+	font-size: .9rem;
+	font-weight: 800;
+	color: #042c76;
+}
+
+.idg-footer {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.footer-price-container {
+	padding: 10px;
+	margin-right: 40px;
+	font-size: 24px;
+}
+
+.idg-buy-btn {
+	min-width: 200px;
+	background-color: cadetblue;
+	color: aliceblue;
+}
+
+[class $="-selected-opt"] {
+	border-style: solid;
+	border-color: #00ffc4;
+	border-width: 3px;
+}
